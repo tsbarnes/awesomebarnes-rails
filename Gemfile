@@ -33,6 +33,8 @@ gem 'devise'
 
 # Active Admin
 gem 'activeadmin'
+gem 'inherited_resources'
+gem 'activeadmin_medium_editor'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
