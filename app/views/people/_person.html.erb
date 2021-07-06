@@ -1,6 +1,9 @@
-<div class="person">
-  <%= image_tag person.image %>
-  <h1><%= person.name %></h1>
-  <h3><%= raw person.title %></h3>
-  <p><%= raw person.summary %></p>
+<% html_class ||= '' %>
+<div class="person card <%= html_class %>">
+  <%= image_tag person.image, class: 'card-img-top' %>
+  <div class="card-body">
+    <h1 class="card-title"><%= person.name %></h1>
+    <h3 class="card-title"><%= raw person.title %></h3>
+    <p class="card-text"><%= raw person.summary %></p>
+  </div>
 </div>
