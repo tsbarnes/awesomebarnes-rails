@@ -3,7 +3,7 @@
   <%= image_tag project.image, class: 'card-img-top' %>
   <div class="card-body">
     <h1 class="card-title"><%= project.title %></h1>
-    <h3 class="card-title"><%= project.subtitle %></h3>
-    <p class="card-text"><%= project.description %></p>
+    <h3 class="card-title"><%= raw project.subtitle %></h3>
+    <p class="card-text"><%= raw project.description %></p>
   </div>
 </div>
